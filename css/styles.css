@@ -1,0 +1,202 @@
+/* IDD (c) 2017 Parsec Digital Media, LLC
+   Temporary Site for Ideal Due Diligence
+------------------------------------------------ */
+/* BASE
+----------------- */
+.gutter-top {
+  margin-top: 15px; }
+
+.gutter-bottom {
+  margin-bottom: 15px; }
+
+.no-padding {
+  padding: 0; }
+
+.btn {
+  border-radius: 2px; }
+  .btn.btn-cta {
+    background: #de7505;
+    color: #fff; }
+    .btn.btn-cta:hover {
+      background: #c56804; }
+  .btn.btn-lg {
+    padding: 1.5rem;
+    font-size: 2.5rem; }
+
+.form-control {
+  border-radius: 2px; }
+  .form-control:focus {
+    box-shadow: none; }
+
+input:active,
+input:focus,
+textarea:focus,
+textarea:active {
+  outline: none; }
+
+.table {
+  display: table; }
+  .table .table-cell {
+    display: table-cell; }
+    .table .table-cell.vertical-center {
+      vertical-align: middle; }
+
+/* BODY, FONTS, MISC
+-------------------------- */
+html,
+body {
+  width: 100%;
+  height: 100%; }
+
+body {
+  font-size: 20px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  line-height: 3.25rem; }
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-weight: bold; }
+
+/* HEADER
+-------------------------- */
+header {
+  border-bottom: 2px solid #132d53;
+  padding: 15px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #fff;
+  z-index: 100;
+  transition: all .25s; }
+  header .logo {
+    max-width: 95px;
+    width: 100%;
+    float: left; }
+  header img {
+    width: 100%;
+    transition: all .25s; }
+  header.header-sm {
+    padding: 7px;
+    transition: all .25s; }
+    header.header-sm .logo {
+      margin-top: 15px; }
+    header.header-sm img {
+      transition: all .25s;
+      width: 80%; }
+  header nav {
+    float: right !important;
+    margin-top: 15px; }
+    header nav li {
+      text-align: center; }
+      header nav li:last-child {
+        margin-right: 0; }
+      header nav li a {
+        font-size: 1.9rem;
+        line-height: .5rem;
+        color: #132d53; }
+        header nav li a:hover {
+          text-decoration: none;
+          color: #2886c8; }
+    header nav .social {
+      border-left: 1px solid #ccc;
+      margin-right: 1rem;
+      padding-left: 2rem; }
+      header nav .social a {
+        margin: 0; }
+
+/* CONTENT
+-------------------------- */
+.intro {
+  height: calc(100vh - 96px);
+  margin-top: 96px;
+  width: 100vw;
+  background: url("../images/idd-background.jpg");
+  color: #fff;
+  box-shadow: 0 0 550px rgba(0, 0, 0, 0.24) inset;
+  background-position: center center; }
+  .intro h1 {
+    font-size: 3rem;
+    line-height: 3.5rem; }
+
+.cta-bar {
+  padding: 4rem 0;
+  color: #fff; }
+  .cta-bar.primary {
+    background: #132d53;
+    background: -moz-linear-gradient(45deg, #132d53 0%, #1b5f8f 99%);
+    background: -webkit-linear-gradient(45deg, #132d53 0%, #1b5f8f 99%);
+    background: linear-gradient(45deg, #132d53 0%, #1b5f8f 99%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#132d53', endColorstr='#1b5f8f',GradientType=1 ); }
+  .cta-bar li {
+    font-size: 4rem;
+    margin-top: 3rem; }
+  .cta-bar h2 {
+    font-size: 4rem; }
+
+.section {
+  padding: 1rem 0; }
+
+/* FOOTER
+-------------------------- */
+footer {
+  background: #262626;
+  color: gray;
+  padding: 3rem 15px; }
+  footer p,
+  footer small {
+    color: gray;
+    font-size: 1.5rem;
+    line-height: 1.9rem; }
+  footer a {
+    color: gray;
+    text-decoration: underline; }
+
+.bootstrap label.error,
+.bootstrap input:focus + label span,
+.bootstrap input:focus:not(:required) + label span,
+.bootstrap input:valid + label span + label span,
+.bootstrap input:focus + label span + label span,
+.bootstrap textarea:focus + label span,
+.bootstrap textarea:focus + label span + label span,
+.bootstrap textarea:valid + label span + label span,
+.bootstrap input.valid:valid:not(:focus) + label span, .bootstrap input.valid:valid:not(:focus) + label span + label, span
+.bootstrap textarea.valid:valid:not(:focus) + label span, .bootstrap textarea.valid:valid:not(:focus) + label span + label span, .bootstrap input.valid:not(:required) + label span, .bootstrap textarea.valid:valid:not(:focus) + label span, label.error, input.error + label span, input.error + label span + label span,
+input.error:active + label span + label span, input.error:focus + label span, input.error:active + label span, input.error:focus + label span + label span, input.error:active + label span + label span, textarea.error + label span, textarea.error + label span + label span, textarea.error:focus + label span,
+textarea.error:active + label span, textarea.error:focus + label span + label span, textarea.error:active + label span + label span {
+  line-height: 1.5rem; }
+
+/* SMALL (sm) devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  header .logo {
+    max-width: 125px; }
+  header nav {
+    margin-top: 15px; }
+    header nav li a {
+      font-size: 3rem;
+      margin-right: 1rem; }
+  header.header-sm nav {
+    margin-top: 0; }
+  header.header-sm .logo {
+    margin-top: 0; }
+
+  .intro {
+    height: calc(100vh - 94px);
+    margin-top: 94px; }
+    .intro h1 {
+      font-size: 6rem;
+      line-height: 7.5rem; }
+
+  header nav {
+    margin-top: 30px; }
+
+  header.header-sm nav {
+    margin-top: 15px; } }
+/* MEDIUM (md) devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  header nav li a {
+    margin-right: 2rem; } }
+/* LARGE (lg) devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .cta-bar {
+    padding: 10rem 0; } }
+
+/*# sourceMappingURL=styles.css.map */

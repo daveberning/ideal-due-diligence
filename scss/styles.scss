@@ -1,0 +1,173 @@
+/* IDD (c) 2017 Parsec Digital Media, LLC
+   Temporary Site for Ideal Due Diligence
+------------------------------------------------ */
+@import "fonts-colors";
+
+/* BODY, FONTS, MISC
+-------------------------- */
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-size: 20px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    line-height: 3.25rem;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-weight: bold;
+}
+
+/* HEADER
+-------------------------- */
+header {
+    border-bottom: 2px solid $primary;
+    padding: 15px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: $white;
+    z-index: 100;
+    transition: all .25s;
+
+    .logo {
+        max-width: 95px;
+        width: 100%;
+        float: left;
+    }
+
+    img {
+        width: 100%;
+        transition: all .25s;
+    }
+
+    &.header-sm {
+        padding: 7px;
+        transition: all .25s;
+
+        .logo {
+            margin-top: 15px;
+        }
+
+        img {
+            transition: all .25s;
+            width: 80%;
+        }
+    }
+
+    nav {
+        float: right !important;
+        margin-top: 15px;
+
+        li {
+            text-align: center;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            a {
+                font-size: 1.9rem;
+                line-height: .5rem;
+                color: $primary;
+
+                &:hover {
+                    text-decoration: none;
+                    color: $secondary;
+                }
+            }
+        }
+
+        .social {
+            border-left: 1px solid #ccc;
+            margin-right: 1rem;
+            padding-left: 2rem;
+
+            a {
+                margin: 0;
+            }
+        }
+    }
+}
+
+/* CONTENT
+-------------------------- */
+.intro {
+    height: calc(100vh - 96px);
+    margin-top: 96px;
+    width: 100vw;
+    background: url("../images/idd-background.jpg");
+    color: $white;
+    box-shadow: 0 0 550px rgba(0,0,0,0.24) inset;
+    background-position: center center;
+
+    h1 {
+        font-size: 3rem;
+        line-height: 3.5rem;
+    }
+}
+
+.cta-bar {
+    padding: 4rem 0;
+    color: $white;
+
+    &.primary {
+        background: rgb(19,45,83);
+        background: -moz-linear-gradient(45deg,  rgba(19,45,83,1) 0%, rgba(27,95,143,1) 99%);
+        background: -webkit-linear-gradient(45deg,  rgba(19,45,83,1) 0%,rgba(27,95,143,1) 99%);
+        background: linear-gradient(45deg,  rgba(19,45,83,1) 0%,rgba(27,95,143,1) 99%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#132d53', endColorstr='#1b5f8f',GradientType=1 );
+    }
+
+    li {
+        font-size: 4rem;
+        margin-top: 3rem;
+    }
+
+    h2 {
+        font-size: 4rem;
+    }
+}
+
+.section {
+    padding: 1rem 0;
+}
+/* FOOTER
+-------------------------- */
+footer {
+    background: lighten($black, 15%);
+    color: lighten($black, 50%);
+    padding: 3rem 15px;
+
+    p,
+    small {
+        color: lighten($black, 50%);
+        font-size: 1.5rem;
+        line-height: 1.9rem;
+    }
+
+    a {
+        color: lighten($black, 50%);
+        text-decoration: underline;
+    }
+}
+
+.bootstrap label.error,
+.bootstrap input:focus + label span,
+.bootstrap input:focus:not(:required) + label span,
+.bootstrap input:valid + label span + label span,
+.bootstrap input:focus + label span + label span,
+.bootstrap textarea:focus + label span,
+.bootstrap textarea:focus + label span + label span,
+.bootstrap textarea:valid + label span + label span,
+.bootstrap input.valid:valid:not(:focus) + label span, .bootstrap input.valid:valid:not(:focus) + label span + label, span
+.bootstrap textarea.valid:valid:not(:focus) + label span, .bootstrap textarea.valid:valid:not(:focus) + label span + label span, .bootstrap input.valid:not(:required) + label span, .bootstrap textarea.valid:valid:not(:focus) + label span,label.error, input.error + label span, input.error + label span + label span,
+input.error:active + label span + label span, input.error:focus + label span, input.error:active + label span, input.error:focus + label span + label span, input.error:active + label span + label span, textarea.error + label span, textarea.error + label span + label span, textarea.error:focus + label span,
+textarea.error:active + label span, textarea.error:focus + label span + label span, textarea.error:active + label span + label span {
+    line-height: 1.5rem;
+}
+
+@import "breakpoints";

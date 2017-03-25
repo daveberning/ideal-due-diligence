@@ -1,0 +1,67 @@
+$primary: #132d53; // dark blue
+$secondary: #2886c8; // light blue
+$tertiary: #1b5f8f; // medium blue
+$cta: #de7505; // rustic orange
+$accent: #de7505; // rustic orange
+
+$white: #fff;
+$black: #000;
+
+/* BASE
+----------------- */
+.gutter-top {
+    margin-top: 15px;
+}
+
+.gutter-bottom {
+    margin-bottom: 15px;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+.btn {
+    border-radius: 2px;
+
+    &.btn-cta {
+        background: $cta;
+        color: $white;
+
+        &:hover {
+            background: darken($cta, 5%);
+        }
+    }
+
+    &.btn-lg {
+        padding: 1.5rem;
+        font-size: 2.5rem;
+    }
+}
+
+.form-control {
+    border-radius: 2px;
+
+    &:focus {
+        box-shadow: none;
+    }
+}
+
+input:active,
+input:focus,
+textarea:focus,
+textarea:active {
+    outline: none;
+}
+
+.table {
+    display: table;
+
+    .table-cell {
+        display: table-cell;
+
+        &.vertical-center {
+            vertical-align: middle;
+        }
+    }
+}
